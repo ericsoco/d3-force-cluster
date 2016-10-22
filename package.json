@@ -26,12 +26,13 @@
     "url": "https://github.com/ericsoco/d3-force-cluster.git"
   },
   "scripts": {
-    "predist": "eslint lib",
+    "lint": "eslint lib",
+    "test": "tape 'test/**/*-test.js' | tap-dot",
+    "predist": "npm run lint && npm run test",
     "dist": "rollup -c",
     "watch": "rollup -c -w",
-    "pretest": "rm -rf dist && mkdir dist && npm run dist",
-    "test": "tape 'test/**/*-test.js' && eslint index.js src",
-    "prepublish": "npm run test && uglifyjs dist/d3-force-cluster.js -c -m -o dist/d3-force-cluster.min.js"
+    "prepush": "npm run dist",
+    "prepublish": "npm run dist && uglifyjs dist/d3-force-cluster.js -c -m -o dist/d3-force-cluster.min.js"
   },
   "dependencies": {},
   "devDependencies": {
@@ -43,6 +44,8 @@
     "rollup": "^0.36.3",
     "rollup-plugin-babel": "^2.6.1",
     "rollup-watch": "^2.5.0",
+    "tap-dot": "^1.0.5",
+    "tape": "^4.6.2",
     "uglify-js": "^2.7.3"
   }
 }
