@@ -1,0 +1,48 @@
+{
+  "name": "d3-force-cluster",
+  "version": "0.0.1",
+  "description": "Clustering force for d3.forceSimulation.",
+  "keywords": [
+    "d3",
+    "d3-module",
+    "d3-force",
+    "layout",
+    "graph",
+    "cluster",
+    "infovis",
+    "dataviz"
+  ],
+  "homepage": "http://ericsoco.github.io/d3-force-cluster/",
+  "license": "BSD-3-Clause",
+  "author": {
+    "name": "Eric Socolofsky",
+    "url": "http://transmote.com/"
+  },
+  "main": "dist/d3-force-cluster.js",
+  "module": "dist/d3-force-cluster.mjs",
+  "jsnext:main": "dist/d3-force-cluster.mjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ericsoco/d3-force-cluster.git"
+  },
+  "scripts": {
+    "predist": "eslint lib",
+    "dist": "rollup -c",
+    "watch": "rollup -c -w",
+    "pretest": "rm -rf dist && mkdir dist && npm run dist",
+    "test": "tape 'test/**/*-test.js' && eslint index.js src",
+    "prepublish": "npm run test && uglifyjs dist/d3-force-cluster.js -c -m -o dist/d3-force-cluster.min.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^7.0.0",
+    "babel-plugin-external-helpers": "^6.8.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babelrc-rollup": "^3.0.0",
+    "eslint": "^3.8.1",
+    "rollup": "^0.36.3",
+    "rollup-plugin-babel": "^2.6.1",
+    "rollup-watch": "^2.5.0",
+    "uglify-js": "^2.7.3"
+  }
+}
