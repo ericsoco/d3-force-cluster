@@ -32,7 +32,8 @@
     "dist": "rollup -c",
     "postdist": "npm run test",
     "watch": "rollup -c -w",
-    "prepublish": "npm run dist && uglifyjs dist/d3-force-cluster.js -c -m -o dist/d3-force-cluster.min.js"
+    "prepublish": "npm run dist && uglifyjs dist/d3-force-cluster.js -c -m -o dist/d3-force-cluster.min.js",
+    "publish-patch": "npm version patch && npm publish"
   },
   "pre-push": [
     "dist"
