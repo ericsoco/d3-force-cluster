@@ -9,7 +9,7 @@ Adapted from Mike Bostock's [Clustered Force Layout III](https://bl.ocks.org/mbo
 
 ## Installing
 
-#### `npm`
+#### npm
 
 `npm install d3-force-cluster`
 
