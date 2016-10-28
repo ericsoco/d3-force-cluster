@@ -23,10 +23,47 @@ Download the [latest release](https://github.com/ericsoco/d3-force-cluster/relea
 
 `<script src="./d3-force-cluster.min.js"></script>`
 
+#### [Browserify CDN](http://wzrd.in/)
+
+`<script src="https://wzrd.in/standalone/d3-force-cluster@latest"></script>`
+
 
 ## Usage
 
-`// TODO: info on how to address imported module, depending on install process above`
+### Accessing the module
+
+The install method you use determines the syntax for accessing the module in your code:
+
+#### npm
+
+Import the `forceCluster()` method and use it in a `forceSimulation`.
+
+```
+import { forceCluster } from 'd3-force-cluster'
+// ...
+d3.forceSimulation
+	.force('cluster', forceCluster());
+```
+
+#### via `<script>`
+
+The `forceCluster()` method is available in the global `d3` namespace.
+
+```
+d3.forceSimulation
+	.force('cluster', d3.forceCluster());
+```
+
+#### [Browserify CDN](http://wzrd.in/])
+
+The Browserify CDN camelCases the package name (`d3-force-cluster` becomes `d3ForceCluster`), and uses it as a global namespace, and hangs the `forceCluster()` method off of it:
+
+```
+d3.forceSimulation
+	.force('cluster', d3ForceCluster.forceCluster());
+```
+
+### Using the module
 
 Add a `'cluster'` force just like you would any other D3 force module:
 
@@ -34,11 +71,10 @@ Add a `'cluster'` force just like you would any other D3 force module:
 // add a clustering force to pull nodes toward their assigned cluster center node
 d3.forceSimulation()
   // cluster by section
-  .force('cluster', d3.forceCluster()
+  .force('cluster', forceCluster()	// see 'Accessing the module' above for the correct syntax
     .centers(function (d) { return clusters[d.cluster]; })
     .strength(0.2)
     .centerInertia(0.1))
-
 ```
 
 More detailed examples:

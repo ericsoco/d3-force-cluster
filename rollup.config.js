@@ -6,7 +6,7 @@ let pkg = require('./package.json');
 let external = Object.keys(pkg.dependencies);
 
 export default {
-  entry: 'lib/index.js',
+  entry: 'index.js',
   plugins: [
     babel(babelrc())
     // istanbul({

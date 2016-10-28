@@ -1,0 +1,1 @@
+export { default as forceCluster } from './lib/forceCluster';
