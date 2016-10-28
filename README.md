@@ -62,17 +62,27 @@ the force centers to the specified number in the range [0,1] and returns this fo
 
 <a name="cluster_strength" href="#cluster_strength">#</a> <i>cluster</i>.<b>strength</b>([<i>strength</i>]) [<>](https://github.com/ericsoco/d3-force-cluster/blob/master/lib/forceCluster.js#L79 "Source")
 
-If *strength* is specified, sets the force strength to the specified number in the range [0,1] and returns this force. If *strength* is not specified, returns the current strength which defaults to 0.1.
+If *strength* is specified, sets the force strength to the specified number in the range [0,1] and returns this force. If *strength* is not specified, returns the current strength, which defaults to 0.1.
 
 This parameter determines the attraction strength of each node to the specified (via [*cluster*.centers](#cluster_centers)) cluster center node/position.
 
 <a name="cluster_centerInertia" href="#cluster_centerInertia">#</a> <i>cluster</i>.<b>centerInertia</b>([<i>centerInertia</i>]) [<>](https://github.com/ericsoco/d3-force-cluster/blob/master/lib/forceCluster.js#L91 "Source")
 
-If *centerInertia* is specified, sets the inertia of cluster center nodes to the specified number in the range [0,1] and returns this force. If *centerInertia* is not specified, returns the current center inertia which defaults to 0.
+If *centerInertia* is specified, sets the inertia of cluster center nodes to the specified number in the range [0,1] and returns this force. If *centerInertia* is not specified, returns the current center inertia, which defaults to 0.
 
 Lower values (close to 0.0) result in cluster center nodes with lower inertia: they are easily pulled around by other nodes in the cluster. Higher values (close to 1.0) result in cluster center nodes that are moved very little by other nodes in the cluster.
 
 
-## Tests and local development
+## Building and testing
 
-`// TODO: finish`
+Install [nvm](http://nvm.sh) and [npm](http://npmjs.com) if you haven't already.
+
+Build with the following commands:
+
+```bash
+nvm use
+npm install
+npm run dist
+```
+
+Test with `npm run test`.
