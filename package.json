@@ -27,7 +27,7 @@
   },
   "scripts": {
     "lint": "eslint lib",
-    "test": "tape 'test/**/*-test.js' | tap-dot",
+    "test": "tape 'test/**/*-test.js' | tap-min",
     "predist": "npm run lint",
     "dist": "rollup -c",
     "postdist": "npm run test",
@@ -38,7 +38,9 @@
   "pre-push": [
     "dist"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "tap-min": "^1.1.0"
+  },
   "devDependencies": {
     "babel-eslint": "^7.0.0",
     "babel-plugin-external-helpers": "^6.8.0",
@@ -48,7 +50,7 @@
     "rollup": "^0.36.3",
     "rollup-plugin-babel": "^2.6.1",
     "rollup-watch": "^2.5.0",
-    "tap-dot": "^1.0.5",
+    "sinon": "^1.17.6",
     "tape": "^4.6.2",
     "uglify-js": "^2.7.3"
   }
