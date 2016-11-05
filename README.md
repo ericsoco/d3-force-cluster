@@ -6,6 +6,8 @@ Pulls nodes toward a set of cluster center nodes / points. Works well with a [co
 
 Adapted from Mike Bostock's [Clustered Force Layout III](https://bl.ocks.org/mbostock/7881887).
 
+[![Build Status](https://travis-ci.org/ericsoco/d3-force-cluster.svg?branch=master)](https://travis-ci.org/ericsoco/d3-force-cluster)
+
 
 ## Installing
 
