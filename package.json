@@ -1,6 +1,6 @@
 {
   "name": "d3-force-cluster",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Clustering force for d3.forceSimulation.",
   "keywords": [
     "d3",
