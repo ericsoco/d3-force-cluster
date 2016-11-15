@@ -15,19 +15,15 @@ Adapted from Mike Bostock's [Clustered Force Layout III](https://bl.ocks.org/mbo
 
 `npm install d3-force-cluster`
 
-#### CDN, via `<script>`
+#### CDN ([UNPKG](https://unpkg.com/)), via `<script>`
 
-`<script src="https://wzrd.in/standalone/d3-force-cluster@latest"></script>`
+`<script src="https://unpkg.com/d3-force-cluster@latest"></script>`
 
 #### Local, via `<script>`
 
 Download the [latest release](https://github.com/ericsoco/d3-force-cluster/releases/latest)
 
 `<script src="./d3-force-cluster.min.js"></script>`
-
-#### [UNPKG](https://unpkg.com/)
-
-`<script src="https://unpkg.com/d3-force-cluster@latest"></script>`
 
 
 ## Usage
@@ -47,7 +43,7 @@ d3.forceSimulation
 	.force('cluster', forceCluster());
 ```
 
-#### via `<script>`, [UNPKG](https://unpkg.com/)
+#### via `<script>` or CDN ([UNPKG](https://unpkg.com/))
 
 The `forceCluster()` method is available in the global `d3` namespace.
 
