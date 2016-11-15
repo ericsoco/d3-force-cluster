@@ -25,9 +25,9 @@ Download the [latest release](https://github.com/ericsoco/d3-force-cluster/relea
 
 `<script src="./d3-force-cluster.min.js"></script>`
 
-#### [Browserify CDN](http://wzrd.in/)
+#### [UNPKG](https://unpkg.com/)
 
-`<script src="https://wzrd.in/standalone/d3-force-cluster@latest"></script>`
+`<script src="https://unpkg.com/d3-force-cluster@latest"></script>`
 
 
 ## Usage
@@ -47,7 +47,7 @@ d3.forceSimulation
 	.force('cluster', forceCluster());
 ```
 
-#### via `<script>`
+#### via `<script>`, [UNPKG](https://unpkg.com/)
 
 The `forceCluster()` method is available in the global `d3` namespace.
 
