@@ -56,15 +56,6 @@ d3.forceSimulation
 	.force('cluster', d3.forceCluster());
 ```
 
-#### [Browserify CDN](http://wzrd.in/])
-
-The Browserify CDN camelCases the package name (`d3-force-cluster` becomes `d3ForceCluster`), and uses it as a global namespace, and hangs the `forceCluster()` method off of it:
-
-```
-d3.forceSimulation
-	.force('cluster', d3ForceCluster.forceCluster());
-```
-
 ### Using the module
 
 Add a `'cluster'` force just like you would any other D3 force module:
