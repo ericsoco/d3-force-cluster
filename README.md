@@ -71,8 +71,10 @@ d3.forceSimulation()
 ```
 
 More detailed examples:
-- [Simple cluster layout](http://bl.ocks.org)
-- [Centered cluster layout](http://bl.ocks.org)
+- [Simple cluster layout<br>![Simple cluster layout](http://bl.ocks.org/ericsoco/raw/4e1b7b628771ae77753842e6dabfcef3/thumbnail.png)](http://bl.ocks.org/ericsoco/4e1b7b628771ae77753842e6dabfcef3)
+- [Centered cluster layout<br>![Centered cluster layout](http://bl.ocks.org/ericsoco/raw/d2d49d95d2f75552ac64f0125440b35e/thumbnail.png)](http://bl.ocks.org/ericsoco/d2d49d95d2f75552ac64f0125440b35e)
+- [Mouse following cluster layout<br>![Mouse following cluster layout](http://bl.ocks.org/ericsoco/raw/11d5013dee991b219b205a4ecd558d7c/thumbnail.png)](http://bl.ocks.org/ericsoco/11d5013dee991b219b205a4ecd558d7c)
+
 
 
 ## API
