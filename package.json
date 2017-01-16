@@ -38,9 +38,7 @@
   "pre-push": [
     "dist"
   ],
-  "dependencies": {
-    "tap-min": "^1.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-eslint": "^7.0.0",
     "babel-plugin-external-helpers": "^6.8.0",
@@ -51,6 +49,7 @@
     "rollup-plugin-babel": "^2.6.1",
     "rollup-watch": "^2.5.0",
     "sinon": "^1.17.6",
+    "tap-min": "^1.1.0",
     "tape": "^4.6.2",
     "uglify-js": "^2.7.3"
   }
