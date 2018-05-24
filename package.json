@@ -1,6 +1,6 @@
 {
   "name": "tabbie-d3-force-cluster",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Clustering force for d3.forceSimulation.",
   "keywords": [
     "d3",
