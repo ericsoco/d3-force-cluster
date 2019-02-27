@@ -1,6 +1,6 @@
 {
-  "name": "d3-force-cluster",
-  "version": "0.1.2",
+  "name": "tabbie-d3-force-cluster",
+  "version": "0.1.3",
   "description": "Clustering force for d3.forceSimulation.",
   "keywords": [
     "d3",
@@ -23,16 +23,16 @@
   "jsnext:main": "dist/d3-force-cluster.mjs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ericsoco/d3-force-cluster.git"
+    "url": "https://github.com/tabbiefox/d3-force-cluster.git"
   },
   "scripts": {
     "lint": "eslint lib",
-    "test": "tape 'test/**/*-test.js' | tap-min",
+    "test": "tape test/**/*-test.js | tap-min",
     "predist": "npm run lint",
     "dist": "rollup -c",
     "postdist": "npm run test",
     "watch": "rollup -c -w",
-    "prepublish": "npm run dist && uglifyjs dist/d3-force-cluster.js -c -m -o dist/d3-force-cluster.min.js",
+    "prepare": "npm run dist && uglifyjs dist/d3-force-cluster.js -c -m -o dist/d3-force-cluster.min.js",
     "publish-patch": "npm version patch && npm publish"
   },
   "pre-push": [
@@ -42,14 +42,14 @@
   "devDependencies": {
     "babel-eslint": "^7.0.0",
     "babel-plugin-external-helpers": "^6.8.0",
-    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-env": "^1.7.0",
     "babelrc-rollup": "^3.0.0",
     "eslint": "^3.8.1",
     "rollup": "^0.36.3",
     "rollup-plugin-babel": "^2.6.1",
     "rollup-watch": "^2.5.0",
     "sinon": "^1.17.6",
-    "tap-min": "^1.1.0",
+    "tap-min": "^1.2.2",
     "tape": "^4.6.2",
     "uglify-js": "^2.7.3"
   }
